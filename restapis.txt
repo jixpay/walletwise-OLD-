@@ -1,0 +1,134 @@
+PRODUCT
+
+POST /products     body:{product}
+{product}
+
+GET /products
+{products:[product]}
+
+GET /products/{id}
+{product}
+
+GET /products?limit=:limit&offset=:offset
+{products:[product]}
+
+GET /products?category=:category
+{products:[product]}
+
+GET /products?search=:query
+{products:[product]}
+
+PUT /products/{id}   body:{product}
+{product}
+
+DELETE /products/{id}
+{product}
+
+
+CART
+
+POST /carts     body:{cart}
+{cart}
+
+GET /carts
+{carts:[cart]}
+
+GET /carts/{id}
+{cart}
+
+DELETE /carts/{id}
+{cart}
+
+PATCH /carts/{id}     body:{cart}
+{cart}
+
+
+CART PRODUCT
+
+GET /cart_product
+{cart_products:[cart_product]}
+
+GET /cart_product/id
+{cart_product}
+
+POST /cart_product   body:{quantity,cart_id,product_id}
+{cart_product}
+
+DELETE /cart_product/id
+{cart_product}
+
+PATCH /cart_product/id    body:{quantity}
+{cart_product}
+
+
+
+STORE
+
+POST /stores      body:{store}
+{store}
+
+GET /stores
+{stores:[store]}
+
+GET /stores/{id}
+{store}
+
+PATCH /stores/{id}   body:{store}
+{store}
+
+DELETE /stores/{id}
+{store}
+
+
+
+
+
+
+
+
+USER
+
+GET /users
+{users:[user]}
+
+GET /users/{id}
+{user}
+
+POST /users   body:{user}
+{user}
+
+PATCH /users/{id}    body:{user}
+{user}
+
+DELETE /users/{id}
+{user}
+
+POST /users/signin   {username,password}
+POST /users/signout    
+
+ORDER
+
+GET /orders
+{orders:[order]}
+
+GET /orders/{id}
+{order}
+
+POST /orders   body:{order}
+{order}
+
+PATCH /orders   body:{order}
+{order}
+
+REVIEW
+
+GET /reviews    body:{product_id}
+{reviews:[review]}
+
+GET /reviews/id
+{review}
+
+POST /reviews  body:{review}
+{review}
+
+

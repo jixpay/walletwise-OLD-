@@ -1,0 +1,300 @@
+As a user, I want to be able to browse all products, so that I can view the entire product catalog.
+    Acceptance Criteria:
+    Given I am on the homepage of the e-commerce website, when I click on the "Products" button, then I should be directed to a page displaying all available products with necessary information.
+
+    TC ID: TC001 
+    Summary: Verify the ability to browse all products. 
+    Pre-requisites: User is on the homepage of the e-commerce website. 
+    Test Procedure: 
+    1. Look for a navigation link or button labeled "Products". 
+    2. Click on the "Products" button. 
+    Expected Results: 
+    User is redirected to a page displaying all available products with necessary information.
+    Actual Results: 
+    User is navigated to the page showing all products.
+
+As a user, I need to be able to search for a specific product to check if it's available on this website.
+    Acceptance Criteria:
+    Given I am on the website's product page, when I enter the name of a specific product into the search bar and click on the search button, then I should see the products that match what i'm searching.
+
+    TC ID: TC001 
+    Summary: Verify the ability to search for a specific product 
+    Pre-requisites: User is on the all products page of the e-commerce website. 
+    Test Procedure: 
+    1. Locate the search bar on the all products page. 
+    2. Enter the name of a specific product into the search bar. 
+    3. Click on the search button.
+    Expected Results: 
+    The all products page will displays the products matching the search query
+    Actual Results:
+    The all products page displays relevant products matching the search query entered by the user.
+    The search results page is empty if there are no relevant products.
+
+    TCID: TC002
+    Summary: Verify search results for a specific product.
+    Pre-requisites: User is on the all products page
+    Test Procedure: 
+    1. Enter an existing product name into the search bar. 
+    2. Click on the search button.
+    Expected Results: 
+    The all products page displays products relevant to the search query.
+    Actual Results:
+    Products matching the search query are displayed on the search results page.
+
+    TCID: TC003
+    Summary: Verify the search functionality with no matching products.
+    Pre-requisites: User is on the all products page displaying the products matching the search query
+    Test Procedure: 
+    1. Enter a non-existent product name into the search bar. 
+    2. Click on the search button.
+    Expected Results: 
+    The user will see an empty products list with an indicator of empty products
+    Actual Results:
+    The all products page displays an empty products indicator
+
+As a user i need to be able to view a single product so that i can read the additional information about that product
+    Acceptance Criteria:
+    Given I am on the website's product page, when I click on a product card then i should be able to see a modal with the additional information about that product
+
+    TC ID: TC001 
+    Summary: Verify the ability to view the product
+    Pre-requisites: User is on the all products page of the e-commerce website. 
+    Test Procedure: 
+    1. Click on product card
+    Expected Results: 
+    The user will be able to see the additional information about the product
+    Actual Results:
+    A modal will be displayed with the information of the product
+
+As a user i need to be able to add a product to a cart, so that later on i can manage and purchase all products in that cart all at once
+    Acceptance Criteria:
+    Given I am on the website's product page or on viewing a single product, when I click add to cart then i should be able to add product to a cart
+
+    TC ID: TC001 
+    Summary: Verify the ability to add to cart.
+    Pre-requisites: User is on the all products page or viewing a single product
+    Test Procedure: 
+    1. Click on add to cart
+    2. Select a cart or create a new cart
+    Expected Results: 
+    The user will have a cart and inside that cart is the product
+    Actual Results:
+    A notification will be displayed
+
+    TC ID: TC002
+    Summary: Verify the need to log in first before adding a product to a cart
+    Pre-requisites: User is on the all products page or viewing a single product
+    Test Procedure:
+    1. Browse all products without logging in
+    2.Click add to cart on a single product
+    Expected Results: 
+    The user will have to log an account or create an account
+    Actual Results:
+    The user will be redirected to the signin page
+
+    TC ID: TC003
+    Summary:  Verify the need to create a cart first before adding a product to a cart
+    Pre-requisites: User is on the all products page or viewing a single product
+    Test Procedure:
+    1.Browse all products using an account with 0 cart
+    2.Click add to cart on a single product
+    Expected Results: 
+    The user will have to create a cart
+    Actual Results:
+    The user will be ask to create a cart first
+
+As a user i want to be able to view all of my carts, so that i can manage my carts
+    Acceptance Criteria:
+    Given I am on the website's homepage, when I click mycarts then i should be directed to the carts page
+
+    TC ID: TC001 
+    Summary: Verify the ability to navigate to the mycarts page
+    Pre-requisites: User is on the all home page
+    Test Procedure: 
+    1. Click on mycarts
+    Expected Results: 
+    The user will directed to the carts page
+    Actual Results:
+    The mycarts page will be shown
+
+    TC ID: TC002
+    Summary: Verify the need to login first before viewing the mycarts page
+    Pre-requisites: User is on the all home page
+    Test Procedure: 
+    1. Click on mycarts without signing in
+    Expected Results: 
+    The user will have to log an account or create an account
+    Actual Results:
+    The user will be redirected to the signin page
+
+As a user i want to be able to create new cart, so that i can add products to that cart
+    Acceptance Criteria:
+    Given I am on the mycarts page when i click add new cart, then a create new cart form will appear
+
+    TC ID: TC001 
+    Summary: Verify the ability to create a new cart
+    Pre-requisites: User is on the all mycarts page
+    Test Procedure: 
+    1. Click on new cart
+    2.Enter cart name
+    3.Click create
+    Expected Results: 
+    The user will have a new cart
+    Actual Results:
+    A notification will be displayed
+
+As a user i want to be able to view a single cart, so that i can manage that cart
+    Acceptance Criteria:
+    Given I am on the mycarts page when I click on a single cart, then a modal will be displayed showing the information about that cart.
+
+    TC ID: TC001 
+    Summary: Verify the ability view a single cart
+    Pre-requisites: User is on the all mycarts page
+    Test Procedure: 
+    1. Click on the cart card
+    Expected Results: 
+    The user will see a modal with information about that cart
+    Actual Results:
+    A modal will be displayed
+
+    TC ID: TC002
+    Summary: Verify the ability rename a cart
+    Pre-requisites: User is viewing a single cart
+    Test Procedure: 
+    1. Click on the rename button
+    2.enter new name
+    3.click save
+    Expected Results: 
+    The user will return to viewing the single cart with the updated name
+    Actual Results:
+    A notification will be displayed
+
+    TC ID: TC003
+    Summary: Verify the ability delete a cart
+    Pre-requisites: User is viewing a single cart
+    Test Procedure: 
+    1. Click on the delete cart button
+    Expected Results: 
+    The user will return to all carts page
+    Actual Results:
+    A notification will be displayed
+    The users will be directed to the mycarts page
+
+    TC ID: TC004
+    Summary: Verify the ability remove a product on a cart
+    Pre-requisites: User is viewing a single cart
+    Test Procedure: 
+    1. Click on the remove button on cart product card
+    Expected Results: 
+    The carts products will be displayed without the removed products
+    Actual Results:
+    A notification will be displayed
+
+As a user i want to be able to checkout a cart, so that i can create an order base on the list of products inside the cart
+    Acceptance Criteria:
+    Given I am viewing a single cart when I click the checkout, then a modal will be displayed showing the possible order information.
+
+    TC ID: TC001
+    Summary: Verify the ability checkout a cart
+    Pre-requisites: User is viewing a single cart
+    Test Procedure: 
+    1. Click on the checkout button
+    2.Choose mode of payment
+    3.Set Destination
+    4.Create Order
+    Expected Results: 
+    The create order modal will exit and the user will be back viewing the single cart
+    Actual Results:
+    A notification will be displayed
+
+    TC ID: TC002
+    Summary: Verify the need to setup mode of payment and delivery destination before proceeding
+    Pre-requisites: User is viewing a cart
+    Test Procedure: 
+    1. Click on the create order button
+    Expected Results: 
+    The user will be notified that it needs to set up first the mode of payment and delivery destination
+    Actual Results:
+    An error notification will appear
+
+As a user i want to be able to browse all of my orders, so that i can manage my orders
+    Acceptance Criteria:
+    Given I am on the homepage when I click the orders button, then I will be directed to the orders page.
+
+    TC ID: TC001
+    Summary: Verify the ability to navigate orders page
+    Pre-requisites: User is on the homepage
+    Test Procedure: 
+    1. Locate the orders button
+    2. Click the orders button
+    Expected Results: 
+    The user will be on the orders page
+    Actual Results:
+    The user got redirected to the orders page
+
+    TC ID: TC002
+    Summary: Verify the need to login first before navigating to the order page
+    Pre-requisites: User is on the homepage without a current user account exist
+    Test Procedure: 
+    1. Locate the orders button
+    2. Click the orders button
+    Expected Results: 
+    The user will be directed to the login page
+    Actual Results:
+    The user got redirected to the login page
+
+As a user i want to be able to cancel an order, so that i can cancel an order
+    Acceptance Criteria:
+    Given I am on the orders page when I click on the order card, then a modal will appear with the information about that order.
+
+    TC ID: TC001
+    Summary: Verify the ability to view an order
+    Pre-requisites: User is on the orders page
+    Test Procedure: 
+    1. On the the list of card orders click on a single order card
+    Expected Results: 
+    The user will see a modal with the information of the order
+    Actual Results:
+    A modal will appear with the information of the order
+
+    TC ID: TC002
+    Summary: Verify the cancel an order
+    Pre-requisites: A modal about the order is open 
+    Test Procedure: 
+    1. Locate the cancel order button
+    2. Click the cancel order button
+    Expected Results: 
+    The status of the order in the modal will be updated
+    Actual Results:
+    The information of the modal change and a notification will be displayed
+
+As a user i want to be able to browse all store, so that I can choose which store im going to visit
+    Acceptance Criteria:
+    Given I am on the homepage when I click on the stores, then I will be directed to the all stores page.
+
+    TC ID: TC001
+    Summary: Verify the ability to navigate all store page
+    Pre-requisites: User is on the homepage
+    Test Procedure: 
+    1. Locate the stores button
+    2. Click the stores button
+    Expected Results: 
+    The user will be directed to the all stores page
+    Actual Results:
+    The page will be navigated to the all stores page
+
+As a user i want to be able to visit a store, so that I can choose products that are sold only by that store
+    Acceptance Criteria:
+    Given I am on the all stores page when I click on visit store, then i will be redirected to the store 
+
+    TC ID: TC001
+    Summary: Verify the ability to navigate a single store
+    Pre-requisites: User is on the all stores page
+    Test Procedure: 
+    1. Locate the visit button inside the store card that you want to visit
+    2. Click the visit button
+    Expected Results: 
+    The user will be directed to the page of that store
+    A list of products will be displayed
+    Actual Results:
+    The page will be navigated to a single page store
